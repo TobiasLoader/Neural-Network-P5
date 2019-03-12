@@ -2,7 +2,7 @@
 function drawButton(X,Y,filled,type, i){
     if (type==="+"){
         if (filled){
-	        	if (nodesPerLayer.length<3){ // DOESN'T currently work beyond 3 layers, so restrict
+	        	if (nodesPerLayer.length<10){ // Limit number of layers to 10
             	fill(76, 191, 55,140);
             } else {
 	            fill(76, 191, 55,50);
@@ -44,8 +44,8 @@ function drawButton(X,Y,filled,type, i){
         line(X,Y-7,X,Y+7);
     }
     if (dist(X,Y,mouseX,mouseY)<18){
-        if ((type==="+" && ((i>2) || (nodesPerLayer.length<3 && (i===1 || i===2)))) || (type==="-" && ((nodesPerLayer.length>2 && (i===1 || i===2)) || (nodesPerLayer[i-3]>1 && i>2)))){
-	        hoverType = [type,i]; // DOESN'T currently work beyond 3 layers, so restrict
+        if ((type==="+" && ((i>2) || (nodesPerLayer.length<10 && (i===1 || i===2)))) || (type==="-" && ((nodesPerLayer.length>2 && (i===1 || i===2)) || (nodesPerLayer[i-3]>1 && i>2)))){
+	        hoverType = [type,i]; // Limit number of layers to 10
 	        cursor("pointer");
         }
     }

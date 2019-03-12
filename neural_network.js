@@ -162,7 +162,8 @@ function training(){
 // 		print("middle",i,new_w);
 // 		prompt();
 		// initialse n and final_node_temp
-		n = [inputs[i][0], init_node_structure().slice(1)]; //init_node_structure().slice(1)
+		n = init_node_structure();
+		n[0] = inputs[i][0];
 // 		print(n);
 		final_node_temp = init_node_structure().slice(1); //init_node_structure()[nodesPerLayer.length-1]
 		
