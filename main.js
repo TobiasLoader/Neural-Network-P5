@@ -6,10 +6,10 @@ function main(){
 	cursor("default");
 	if (network_created){
     drawNetwork(w);
-    fill(100);
+    fill(150);
     textSize(20);
     noStroke();
-		text('My neural network was correct ' + 100 * success_rate + '% of the time.',W/2,17*H/20);
+		text('the neural network was CORRECT ' + 100 * success_rate + '% of the time.',W/2,17*H/20);
 		next_button(false);
 	} else {
     hoverType=["",0];
@@ -18,6 +18,11 @@ function main(){
     drawNetworkBuild();
     draw_main_buttons();
     next_button(true);
+    fill(200);
+    textSize(20);
+    noStroke();
+    text('press H for help.',W/2,17*H/20);
+
 	}
 }
 
@@ -45,7 +50,7 @@ function mouseClicked(){
         }
     }
     main();
-    if (dist(W-20,20,mouseX,mouseY)<60){
+    if (dist(W-20,20,mouseX,mouseY)<(W+H)/25){
 	    var node_num_error = false;
 	    var errors = displayErrors();
 	    for (var i=0; i<errors.length; i+=1){
@@ -59,9 +64,16 @@ function mouseClicked(){
 	    }
     }
 	} else {
-		if (dist(W-20,20,mouseX,mouseY)<60){
+		if (dist(W-20,20,mouseX,mouseY)<(W+H)/25){
 	    network_created = false;
     }
+	}
+}
+
+
+function keyPressed(){
+	if (keyCode === 72){
+		alert('HELP\n\nClick the large buttons on the left and right to alter the number of layers. Click the small buttons above and below each layer to modify the number of nodes in that layer. The start and end layer MUST have the same number of nodes (as one input corresponds to exactly one output). Once you have customised the network, and are ready to train it, click the BLUE button in the top right screen. You will then be prompted to enter the number of training examples, and the number of trials. This determines how well the network performs.\n\nWhen viewing the network, BLUE lines represent POSITIVE weights, RED lines represent NEGATIVE weights, and THICKER lines represent weights of greater MAGNITUDE.');	
 	}
 }
 

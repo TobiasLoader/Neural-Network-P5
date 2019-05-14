@@ -13,7 +13,7 @@ function round_n_to_rdp(n, r){
 
 // Print an error message if given an incompatible input
 function wrong_input(){
-	print("\nOh no!\nYour input is not compatible with our code!\nSorry...")
+	alert("\nOh no!\nYour input is not compatible with our code!\nSorry...")
 }
 
 // neural_network ------------------------------------------------------------------
@@ -46,7 +46,7 @@ var maxVal;
 // Check to see if outputs were correct
 function output_is_correct(trials, i, nPL){
   for (var j=0; j<nPL[nPL.length-1]; j+=1){
-      if (n[nPL.length-1][j] === 1 && trials[i][1][j]){
+      if (n[nPL.length-1][j] == 1 && trials[i][1][j]){
       	return true;
       }
   }
@@ -82,7 +82,7 @@ function setup() {
 		
   canvas = createCanvas(W, H);
 
-  textFont("Avenir Next",40);
+  textFont("Courier",40);
   textAlign(CENTER,CENTER);
 //   fill(100);
 //   text("CLICK",W/2,H/2);

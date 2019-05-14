@@ -55,20 +55,20 @@ function next_button(forward){
 	fill(170, 232, 255,150);
   strokeWeight(1);
   stroke(200);
-  ellipse(W-20,20,120,120);
+  ellipse(W-20,20,2*(W+H)/25,2*(W+H)/25);
   stroke(255);
   strokeWeight(3);
   fill(255);
   if (forward){
-	  line(W-25,25,W-45,45);
+	  line(W-(10+3*(W+H)/200),10+3*(W+H)/200,W-3*(W+H)/100,3*(W+H)/100);
 	  noStroke();
-  	triangle(W-20,20,W-35,20,W-20,35);
+	  triangle(W-20,20,W-3*(W+H)/100,20,W-20,3*(W+H)/100);
   } else {
-	  line(W-20,20,W-40,40);
+	  line(W-(10+3*(W+H)/200),10+3*(W+H)/200,W-20,20);
 	  noStroke();
-	  triangle(W-45,45,W-30,45,W-45,30);
+	  triangle(W-3*(W+H)/100,3*(W+H)/100,W-3*(W+H)/100,20,W-20,3*(W+H)/100);
   }
-  if (dist(W-20,20,mouseX,mouseY)<60){
+  if (dist(W-20,20,mouseX,mouseY)<(W+H)/25){
 	  cursor("pointer");
   }
 }
