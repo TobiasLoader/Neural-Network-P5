@@ -1,7 +1,5 @@
 # Neural-Network-P5
 
-  - README
-
 Neural Network P5: https://tobiasloader.github.io/Neural-Network-P5/
 
 INTRODUCTION:
