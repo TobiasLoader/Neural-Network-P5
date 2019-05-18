@@ -8,12 +8,12 @@ This is the graphical version of my first attempt at a neural network, so the tr
 
 GLOSSARY:
 
-INPUT & OUTPUT LAYERS = dark grey vertical bars
-HIDDEN LAYER/S (initially none) = light grey vertical bar
-NODE = small circle in layer
+INPUT & OUTPUT LAYERS: dark grey vertical bars.
+HIDDEN LAYER/S (initially none): light grey vertical bar.
+NODE: small circle in layer.
  
-TRAINING = # of 'lessons' the network will undergo
-TESTS = # of questions in the 'final exam'
+TRAINING: # of 'lessons' the network will undergo.
+TESTS: # of questions in the 'final exam'.
  
  1 Set your chosen number of hidden layers via the larger PLUS and MINUS icons located at either side of the window.
  
