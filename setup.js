@@ -13,19 +13,20 @@ function round_n_to_rdp(n, r){
 
 // Print an error message if given an incompatible input
 function wrong_input(){
-	alert("\nOh no!\nYour input is not compatible with our code!\nSorry...")
+	alert("Oh noes 😮\n\nYour input is not compatible with our code! Please only input whole numbers beween 10 and 1 million.\n\nPlease try again...")
 }
 
 // neural_network ------------------------------------------------------------------
 
 var network_created;
+var abort;
 var nodesPerLayer;
 var n;
 var w;
 var a;
 var c;
 var correct_num;
-var trial_num;
+var test_num;
 var success_rate;
 
 // training
@@ -36,29 +37,20 @@ var final_node_temp;
 var inputs;
 var new_w;
 
-// trialling
+// testing
 
-var trials;
+var tests;
 var maxNeg;
 var maxVal;
 
 
 // Check to see if outputs were correct
-function output_is_correct(trials, i, nPL){
+function output_is_correct(tests, i, nPL){
   for (var j=0; j<nPL[nPL.length-1]; j+=1){
-      if (n[nPL.length-1][j] == 1 && trials[i][1][j]){
+      if (n[nPL.length-1][j] == 1 && tests[i][1][j]){
       	return true;
       }
   }
-/*
-	var test = [];
-	for (var j=0; j<nodesPerLayer[-1]; j+=1){
-		test.push(n[-1][j] === 1 && trials[i][-1][j]);
-	}
-	if ((n[nodesPerLayer.length-1][0] > n[nodesPerLayer.length-1][1] && trials[i][1][1] < certainty) || (n[nodesPerLayer.length-1][0] < n[nodesPerLayer.length-1][1] && trials[i][1][0] < certainty)){
-    return true;
-  }
-*/
 }
 
 // graphics ------------------------------------------------------------------
@@ -73,6 +65,7 @@ function setup() {
 	H = window.innerHeight;
 	
 	network_created = false;
+	abort = false;
   nodesPerLayer = [2,2];
 
 	paddingX = W/4;

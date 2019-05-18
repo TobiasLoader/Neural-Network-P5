@@ -54,6 +54,10 @@ function displayErrors(){
 		alert("ERROR 001 / NODE_NUM:\nDifferent number of nodes in the first and last layer.");
 		errors.push('NODE_NUM');
 	}
+	if (abort) {
+		alert("ERROR 002 / NO_INPUT:\nDifferent number of nodes in the first and last layer.");
+		errors.push('NO_INPUT');
+	}
 	return errors;
 }
 

@@ -77,7 +77,11 @@ function drawNetworkBuild(){
     for (var layer=0; layer<nodesPerLayer.length; layer+=1){
         strokeWeight(1);
         stroke(224, 224, 224);
-        fill(106, 121, 181,20);
+        if (layer === 0 || layer === nodesPerLayer.length-1){
+        	fill(106, 121, 181,20);
+        } else {
+	        fill(106, 121, 181,5);
+        }
         rect(XtoPix(layer,1,nodesPerLayer.length)-10-20/nodesPerLayer.length,paddingY,20+40/nodesPerLayer.length,H-2*paddingY,3);
         for (var node=0; node<nodesPerLayer[layer]; node+=1){
             fill(255);

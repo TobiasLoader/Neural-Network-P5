@@ -10,7 +10,9 @@ function neural_network(){
   a = init_node_structure();
   c = init_node_structure()[nodesPerLayer.length-1];
   training();
-  trialling();
+  if (!abort){
+  	testing();
+  }
 }
 
 // Initialises the node array by consulting and looping through the array "nodesPerLayer"

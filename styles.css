@@ -2,6 +2,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	background: #FFFFFF !important;
 }
 
 html {
@@ -9,4 +10,29 @@ html {
 	width: 100%;
 	overflow-x:hidden;
 	overflow-y:hidden;
+	background: #FFFFFF !important;
+}
+
+#ReadMeWrapper {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	transform: translate(-50%, -50%);
+}
+
+p,a {
+	font-family: courier;
+	display: inline-block;
+	text-size: 20px;
+	color:gray;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
 }
