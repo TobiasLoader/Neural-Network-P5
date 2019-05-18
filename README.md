@@ -1,8 +1,10 @@
 # Neural-Network-P5
 
+  - README
+
 Neural Network P5: https://tobiasloader.github.io/Neural-Network-P5/
 
-ReadMe: INFORMATION & INSTRUCTIONS
+INTRODUCTION:
 
 This is the graphical version of my first attempt at a neural network, so the training task is relatively trivial. The task I have set the network is to learn to recognise the highest number from a list of random numbers between -1 and 1. The number of numerical inputs will be equal to the number of nodes in the input layer.
 
