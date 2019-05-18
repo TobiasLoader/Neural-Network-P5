@@ -2,18 +2,18 @@
 
 Neural Network P5: https://tobiasloader.github.io/Neural-Network-P5/
 
-INFORMATION & INSTRUCTIONS
+ReadMe: INFORMATION & INSTRUCTIONS
 
 This is the graphical version of my first attempt at a neural network, so the training task is relatively trivial. The task I have set the network is to learn to recognise the highest number from a list of random numbers between -1 and 1. The number of numerical inputs will be equal to the number of nodes in the input layer.
 
 GLOSSARY:
 
- INPUT & OUTPUT LAYERS = dark grey vertical bars
- HIDDEN LAYER/S (initially none) = light grey vertical bar
- NODE = small circle in layer
+INPUT & OUTPUT LAYERS = dark grey vertical bars
+HIDDEN LAYER/S (initially none) = light grey vertical bar
+NODE = small circle in layer
  
- TRAINING = # of 'lessons' the network will undergo
- TESTS = # of questions in the 'final exam'
+TRAINING = # of 'lessons' the network will undergo
+TESTS = # of questions in the 'final exam'
  
  1 Set your chosen number of hidden layers via the larger PLUS and MINUS icons located at either side of the window.
  
