@@ -1,6 +1,8 @@
 # Neural-Network-P5
 
-Neural Network P5: https://tobiasloader.github.io/Neural-Network-P5/
+
+Online Demo: https://tobiasloader.github.io/Neural-Network-P5/
+
 
 INTRODUCTION:
 
