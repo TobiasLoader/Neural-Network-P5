@@ -18,6 +18,7 @@ GLOSSARY:
 
   - TESTS: # of questions in the 'final exam'.
  
+ 
 1. Set your chosen number of hidden layers via the larger PLUS and MINUS icons located at either side of the window.
  
 2. Now set the number of nodes in each layer via the smaller PLUS and MINUS icons, which appear above or below each layer. NB: Check that the first and last layer have the SAME number of nodes (so that each input corresponds to exactly one output).
