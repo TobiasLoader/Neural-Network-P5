@@ -19,15 +19,17 @@ GLOSSARY:
   - TESTS: # of questions in the 'final exam'.
  
  
-1 Set your chosen number of hidden layers via the larger PLUS and MINUS icons located at either side of the window.
+INSTRUCTIONS:
+
+1. Set your chosen number of hidden layers via the larger PLUS and MINUS icons located at either side of the window.
  
-2 Now set the number of nodes in each layer via the smaller PLUS and MINUS icons, which appear above or below each layer. NB: Check that the first and last layer have the SAME number of nodes (so that each input corresponds to exactly one output).
+2. Now set the number of nodes in each layer via the smaller PLUS and MINUS icons, which appear above or below each layer. NB: Check that the first and last layer have the SAME number of nodes (so that each input corresponds to exactly one output).
  
-3 Now that you have designed the layout of your network it's time to begin training it! Click the large BLUE button in the top right corner of the screen and you will be prompted to input your choice of the number of training cycles and tests. NB: You could choose quite large numbers, eg: 100,000 on a smaller network design, without overly taxing the average home computer.
+3. Now that you have designed the layout of your network it's time to begin training it! Click the large BLUE button in the top right corner of the screen and you will be prompted to input your choice of the number of training cycles and tests. NB: You could choose quite large numbers, eg: 100,000 on a smaller network design, without overly taxing the average home computer.
  
-4 Several factors determine how well the network performs, such as the design of its layout, the number of training cycles and the number of tests it runs. NB: results will vary, as the training cycles are completely randomised each time.
+4. Several factors determine how well the network performs, such as the design of its layout, the number of training cycles and the number of tests it runs. NB: results will vary, as the training cycles are completely randomised each time.
  
-5 When viewing the results screen: the BLUE lines represent POSITIVE relationship between nodes, RED lines represent NEGATIVE weights, and THICKER lines represent weights of greater MAGNITUDE. The optimal configuration of the weights for the default 2x2 network should be [1,-1,-1,1], ie: blue, red, red, blue lines, all of the same thickness.
+5. When viewing the results screen: the BLUE lines represent POSITIVE relationship between nodes, RED lines represent NEGATIVE weights, and THICKER lines represent weights of greater MAGNITUDE. The optimal configuration of the weights for the default 2x2 network should be [1,-1,-1,1], ie: blue, red, red, blue lines, all of the same thickness.
  
 VERSION: 2.0  -  written in P5.JS
 
