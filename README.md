@@ -12,7 +12,7 @@ GLOSSARY:
 
   - NODE: small circle in a layer, represents an artificial neurone which enables transmission of data through the network.
   
-  - INPUT & OUTPUT LAYERS: dark grey vertical bars, consisting of a column of nodes used for input and output.
+  - INPUT LAYER and OUTPUT LAYER: dark grey vertical bars, consisting of a column of nodes used for input and output.
 
   - HIDDEN LAYER/S (initially none): light grey vertical bars, consisting of a column of nodes.
   
