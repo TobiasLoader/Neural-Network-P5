@@ -1,7 +1,7 @@
-# Neural-Network-P5
+# Supervised-Deep-Neural-Network
 
 
-Online Demo: https://tobiasloader.github.io/Neural-Network-P5/
+Online Demo: https://tobiasloader.github.io/Supervised-Deep-Neural-Network/
 
 
 INTRODUCTION:
