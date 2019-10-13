@@ -1,4 +1,4 @@
-# Supervised-Deep-Neural-Network
+# Supervised Deep Neural Network
 
 
 Online Demo: https://tobiasloader.github.io/Supervised-Deep-Neural-Network/
