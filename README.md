@@ -6,7 +6,8 @@ Online Demo: https://tobiasloader.github.io/Supervised-Deep-Neural-Network/
 
 INTRODUCTION:
 
-This is the graphical version of my first attempt at a neural network, so the training task is relatively trivial. The task I have set the network is to learn to recognise the highest number from a list of random numbers between -1 and 1. The number of numerical inputs will be equal to the number of nodes in the input layer.
+This was my first neural network algorithm, which I initially wrote in Python during Christmas of 2018. A few months later I converted it to P5.js in order to include a GUI – enabling the user to easily choose certain properties of the network, such as the number of hidden layers and the number of nodes per layer. The relatively trivial task I have set the network is to learn to recognise the highest number from a list of random numbers between -1 and 1. In use, it is important that the number of numerical inputs into the nodes in the input layer is the same as the number of nodes in the output layer, i.e. a 1:1 mapping.
+
 
 GLOSSARY:
 
